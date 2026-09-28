@@ -8,24 +8,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/overlays.css">
+    <link rel="stylesheet" href="styles/configurations.css">
+
 </head>
 <body>
+    <div id="backdrop"></div>
     <header id="main-header">        
         <h1>Play Tic, Tac, Toe</h1>
         <p>built with HTML, CSS, JavaScript</p>
     </header>
     <main>
-        <aside>
+        <aside class="modal" id="config-overlay">
            
                 <h2>Choose your name</h2>
                 <form>
-                    <div>
+                    <div class="form-control">
                         <label for="playerName">Player name</label>
                         <input type="text" name="playerName" id="playerName">
                     </div>
                     <div>
-                        <button type="button">Cancel</button>
-                        <button type="submit">Confirm</button>
+                        <button type="button" class="btn btn-alt">Cancel</button>
+                        <button type="submit" class="btn">Confirm</button>
                     </div>
                 </form>
         </aside>
@@ -35,26 +39,21 @@
                     <article>
                         <h2>Player 1</h2>
                         <h3><span>PLAYER NAME</span></h3>
-                        <p>X</p>
-                        <button type="button">Edit</button>
+                        <p class="player-symbol">X</p>
+                        <button type="button" class="btn btn-alt" >Edit</button>
                     </article>
                 </li>
                 <li>
                          <article>
                         <h2>Player 2</h2>
                         <h3><span>PLAYER NAME</span></h3>
-                        <p>O</p>
-                        <button type="button">Edit</button>
+                        <p class="player-symbol">O</p>
+                        <button type="button" class="btn btn-alt">Edit</button>
                     </article>
-                    <article>
-                        <h2>Player 2</h2>
-                        <h3><span>PLAYER NAME</span></h3>
-                        <p>O</p>
-                        <button type="button">Edit</button>
-                    </article>
+                    
                 </li>
             </ol>
-            <button>Start New Game</button>
+            <button class="btn ">Start New Game</button>
 
         </section>
         <section id="active-game">
