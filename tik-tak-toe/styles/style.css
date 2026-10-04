@@ -5,6 +5,7 @@ body {
   background-color: rgb(247, 239, 247);
 }
 #main-header {
+  width: 90%;
   background-color: rgb(140, 0, 255);
   color: white;
   padding: 2rem 5%;
