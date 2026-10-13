@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="styles/overlays.css">
     <link rel="stylesheet" href="styles/configurations.css">
     <link rel="stylesheet" href="styles/game.css">
-
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
 </head>
 <body>
     <div id="backdrop"></div>
@@ -25,12 +27,12 @@
                 <h2>Choose your name</h2>
                 <form>
                     <div class="form-control">
-                        <label for="playerName">Player name</label>
-                        <input type="text" name="playerName" id="playerName">
+                        <label for="playername">Player name</label>
+                        <input type="text" name="playername" id="playername">
                     </div>
                     <div>
-                        <button type="button" class="btn btn-alt">Cancel</button>
-                        <button type="submit" class="btn">Confirm</button>
+                        <button type="button" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+                        <button type="submit" class="btn" id="submit">Confirm</button>
                     </div>
                 </form>
         </aside>
@@ -41,15 +43,15 @@
                         <h2>Player 1</h2>
                         <h3><span>PLAYER NAME</span></h3>
                         <p class="player-symbol">X</p>
-                        <button type="button" class="btn btn-alt" >Edit</button>
+                        <button type="button" class="btn btn-alt" id="edit-player-1-btn" >Edit</button>
                     </article>
                 </li>
                 <li>
-                         <article>
+                    <article>
                         <h2>Player 2</h2>
                         <h3><span>PLAYER NAME</span></h3>
                         <p class="player-symbol">O</p>
-                        <button type="button" class="btn btn-alt">Edit</button>
+                        <button type="button" class="btn btn-alt" id="edit-player-2-btn">Edit</button>
                     </article>
                     
                 </li>

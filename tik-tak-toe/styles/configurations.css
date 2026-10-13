@@ -1,3 +1,8 @@
+#config-overlay{
+    text-align: center;
+    z-index: 100;
+    background-color: white;
+}
 #config-overlay h2{
     margin: 0.5rem 0;
 }
